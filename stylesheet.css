@@ -1,0 +1,12 @@
+body {
+    background-image: url("pixelated.jpg");
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: scroll;
+    color:white }
+
+div { max-width:600px;
+	margin:auto
+	background-color:white;
+	}
+	
