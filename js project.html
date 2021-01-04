@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      /* Created by Dhruv Dubey */
+
+      html {
+        background-image: url("https://cdn.dribbble.com/users/1265986/screenshots/3016101/mentalhealthday_v07.gif");
+        background: no repeat center center fixed;
+        background-size: cover;
+        color: #ffffff;
+      }
+      a {
+        color: #bac3cf;
+      }
+
+      #foot {
+        padding: 10px;
+        font-size: 13px;
+        margin-top: 30%;
+        position: relative;
+        height: 30px;
+        background-color: gray;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+      }
+      .form {
+        padding: 10px;
+        margin-top: 30%;
+        margin-left: 10%;
+      }
+      .form input {
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        margin-left: 8%;
+        background-color: #4e545c;
+        color: #ffffff;
+      }
+      .form button {
+        border: none;
+        margin: 10px;
+        margin-left: 31%;
+        padding: 10px;
+        background-color: dodgerblue;
+      }
+
+      .h3 {
+        margin-left: 6%;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="h3">Rate your brain from 1 to 10</h3>
+    <div class="form">
+      <input type="number" id="input" placeholder="Enter a number" />
+      <button onclick="test()">click me</button>
+    </div>
+    <div>
+      <p id="foot" style="text-align: center;">
+        Idea, Source code made and modified by
+        <a href="https://www.sololearn.com/Profile/13084228/?ref=app">Kishlay</a
+        >, Designed by
+        <a href="https://www.sololearn.com/Profile/18930868/?ref=app"
+          >Dhruv Dubey</a
+        >
+        And adviced by
+        <a href="https://www.sololearn.com/Profile/15674497/?ref=app"
+          >CodeShow</a
+        >
+      </p>
+    </div>
+    <script>
+      function test() {
+        var rawInput = document.getElementsByTagName("input");
+        var input = rawInput[0].value;
+        var brain = input;
+        document.getElementById("input").value = null;
+        if (brain == "") {
+          alert("enter something in the text box");
+        } else if (brain == "1") {
+          alert("This is dumbness.");
+        } else if (brain == "2") {
+          alert("This is numbness");
+        } else if (brain == "3") {
+          alert("This is the backbencher's");
+        } else if (brain == "4") {
+          alert("This is smart.");
+        } else if (brain == "5") {
+          alert("This is a super intelligent but liar brain ");
+        } else if (brain == "6") {
+          alert("this is Einstein level liar ");
+        } else if (brain == "7") {
+          alert(" The odd one out... ");
+        } else if (brain == "8") {
+          alert(" The random number... ");
+        } else if (brain == "9") {
+          alert(" you are a Sololearn Thug ");
+        } else if (brain == "10") {
+          alert(
+            " If you are this intelligent, you must be a full time coder.. right??👨‍💻👩‍💻 "
+          );
+        } else if (brain == "11") {
+          alert(
+            " You are outta this list. Thankyou...(for lying...shhhhh!!🤫🤫🤫) "
+          );
+        } else {
+          alert("you are lying");
+        }
+      }
+    </script>
+  </body>
+</html>
